@@ -26,7 +26,7 @@ connection.connect(err => {
 
 // GET endpoint to retrieve items from the database
 app.get('/items', (req, res) => {
-    const query = 'SELECT * FROM demodb';
+    const query = 'SELECT * FROM items';
 
     connection.query(query, (err, results) => {
         if (err) {
